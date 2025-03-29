@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Gerenciamento de Produtos{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/litera/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <style>
+        html, body {
+            height: 100%;
+        }
+        #page-content {
+            flex: 1 0 auto;
+        }
+        #sticky-footer {
+            flex-shrink: 0;
+        }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+    </style>
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="{% url 'produto_list' %}">
+                <img src="{% static 'img/logo.png' %}" alt="Logo" style="height: 40px; margin-right: 10px;">
+                TechStore
+            </a>
+        </nav>
+        <div id="page-content" class="container">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <footer id="sticky-footer" class="footer mt-auto">
+            <div class="container text-center">
+                <p>&copy; Projeto Desenvolvido por Pedro Henrique Amorim Araujo de Santana - 2025. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

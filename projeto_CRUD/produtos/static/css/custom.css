@@ -1,0 +1,25 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f3f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #0056b3 !important;
+    padding: 20px;
+}
+
+.container {
+    flex: 1;
+    padding: 40px 0; /* Aumenta o espaço entre navbar e footer */
+}
+
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto;
+}
