@@ -19,7 +19,7 @@ Pré-requisitos:
 Passos para Configuração e Execução:
 
 1. Clonar o repositório ou criar a estrutura do projeto:
-   git clone 
+   git clone https://github.com/devpedroamorim/projeto_techstore
    cd projeto_CRUD
 
 2. Instalar as dependências:
